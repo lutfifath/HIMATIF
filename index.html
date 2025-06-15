@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard Universitas MA'ARIF NU Kebumen</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        background-color: #f9f9f9;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 30px;
+        align-items: center;
+      }
+
+      .left-panel {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        text-align: center;
+      }
+
+      .left-panel img {
+        width: 120px;
+        margin-bottom: 20px;
+      }
+
+      .left-panel h1 {
+        font-size: 20px;
+        color: #333;
+        margin-top: 20px;
+      }
+
+      .right-panel {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+      }
+
+      .right-panel a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .card {
+        background-color: #fff;
+        padding: 24px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+        transition: 0.3s;
+        cursor: pointer;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-icon {
+        font-size: 28px;
+        color: #4944d8;
+        background-color: #d5d5e0;
+        width: 42px;
+        height: 42px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+
+      .card-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 6px;
+      }
+
+      .card-desc {
+        font-size: 15px;
+        color: #555;
+      }
+
+      @media screen and (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Panel Kiri -->
+      <div class="left-panel">
+        <img src="./img/HIMATIF.png" alt="Logo UNNU Kebumen" />
+        <h1>HIMPUNAN MAHASISWA TEKNIK INFORMATIKA</h1>
+      </div>
+
+      <!-- Panel Kanan -->
+      <div class="right-panel">
+        <a href="login.html" class="card">
+          <div class="card-icon">👤</div>
+          <div class="card-title">KETUA HIMATIF</div>
+          <div class="card-desc">Ketua Himpunan & Wakil Ketua Himpunan</div>
+        </a>
+        <a href="login.html" class="card">
+          <div class="card-icon">📝</div>
+          <div class="card-title">SEKRETARIS</div>
+          <div class="card-desc">Sistem Informasi</div>
+        </a>
+        <a href="login.html" class="card">
+          <div class="card-icon">💰</div>
+          <div class="card-title">BENDAHARA</div>
+          <div class="card-desc">Sistem Informasi Keuangan Himatif</div>
+        </a>
+        <a href="login.html" class="card">
+          <div class="card-icon">📂</div>
+          <div class="card-title">KADIV</div>
+          <div class="card-desc">Sistem Informasi Ketua Divisi</div>
+        </a>
+        <a href="login.html" class="card">
+          <div class="card-icon">🧾</div>
+          <div class="card-title">PENDAFTARAN</div>
+          <div class="card-desc">Sistem Informasi Open Recruitment</div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
